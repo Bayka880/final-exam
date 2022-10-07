@@ -1,0 +1,33 @@
+.task-lists{
+    text-align: center;
+    margin-top: 200px;
+}
+.items{
+    padding-top:40px;
+    width: 400px;
+    margin: auto;
+}
+.my-todo{
+    width: 400px;
+    margin:auto;
+    height: 50px;
+    background-color: rgb(6, 171, 171);
+    padding-top: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+#addtask{
+    border-radius: 50px;
+    border: solid 1px rgb(156, 156, 159);
+    height: 40px;
+}
+#addtask-bt{
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(6, 171, 171);
+    height: 40px;
+}
