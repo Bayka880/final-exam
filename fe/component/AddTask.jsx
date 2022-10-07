@@ -1,11 +1,14 @@
 import axios from "axios"
 
-export default function AddTask(){
+export default function AddTask({mutate}){
+   
     const handlerAdd = (e)=>{
         e.preventDefault()
         axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/v1/todo` , {
             taskName:e.target.addtask.value
-        }).then(res=>console.log(res)).catch(err=>console.log(err))
+        }).then(res=>{if(res.status==200){
+            mutate()
+        }}).catch(err=>console.log(err))
     }
     return(
     <div>

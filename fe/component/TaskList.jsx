@@ -14,8 +14,6 @@ export default function TaskList(){
     const handleChange = (event) => {
         console.log(event.defaultValue)
         setChecked(event.target.checked);
-       
-    
     };
     
     return(
@@ -33,6 +31,6 @@ export default function TaskList(){
     
         })
     }
-    <AddTask/>
+    <AddTask mutate={mutate}/>
     </div>)
 }
