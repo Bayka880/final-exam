@@ -10,6 +10,7 @@ export default function AddTask({mutate}){
             mutate()
         }}).catch(err=>console.log(err))
     }
+   
     return(
     <div>
         <form onSubmit={handlerAdd}  style={{
